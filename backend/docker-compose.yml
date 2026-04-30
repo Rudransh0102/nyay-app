@@ -1,0 +1,40 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nyay-api
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      - REDIS_URL=redis://nyay-redis:6379/0
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - nyay-net
+
+  redis:
+    image: redis:7-alpine
+    container_name: nyay-redis
+    restart: unless-stopped
+    command: redis-server --maxmemory 128mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - nyay-net
+
+volumes:
+  redis_data:
+
+networks:
+  nyay-net:
+    driver: bridge

@@ -1,50 +1,125 @@
-# Welcome to your Expo app 👋
+# NyayAPP — Indian Legal Tech Platform
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> **Zero fluff. Production-ready.** A full-stack Indian legal tech platform providing access to the Indian Constitution, legal document search, and a grievance complaint system.
 
-## Get started
+---
 
-1. Install dependencies
+## Architecture
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+nyay-app/
+├── backend/                    # Go (Gin) — Modular Monolith / Clean Architecture
+│   ├── cmd/api/main.go         # Entry point
+│   ├── internal/
+│   │   ├── auth/               # Auth module (register, login, JWT)
+│   │   ├── legal/              # Legal Explorer module
+│   │   ├── complaint/          # Complaint System module
+│   │   └── user/               # User & Bookmark module
+│   ├── infrastructure/
+│   │   ├── postgres/           # PostgreSQL connection pool
+│   │   ├── redis/              # Redis caching client
+│   │   └── meilisearch/        # Full-text search client
+│   ├── pkg/
+│   │   ├── config/             # Env-based config
+│   │   ├── middleware/         # JWT auth, RBAC, request logger
+│   │   ├── response/           # Standardised API responses
+│   │   └── logger/             # Structured slog logger
+│   ├── migrations/             # SQL migrations (auto-applied by Docker)
+│   ├── seeds/                  # Indian Constitution sample data
+│   ├── docker-compose.yml      # Postgres, Redis, Meilisearch, API
+│   ├── Dockerfile              # Multi-stage Go → distroless
+│   └── go.mod
+│
+└── mobile/                     # React Native (Expo) — Feature-based Architecture
+    ├── src/
+    │   ├── api/                # Axios client + typed endpoints
+    │   ├── features/
+    │   │   ├── onboarding/     # Onboarding carousel + Auth screen
+    │   │   ├── explorer/       # Legal document list + Article detail
+    │   │   ├── complaints/     # File complaint + List complaints
+    │   │   └── profile/        # Profile + settings
+    │   ├── store/              # Zustand stores (auth, legal, complaint)
+    │   ├── theme/              # Design tokens (pastel palette, typography)
+    │   ├── navigation/         # Root navigator + Bottom tab bar
+    │   └── shared/             # Reusable UI atoms (Button, Card, Input, Badge)
+    ├── App.tsx
+    └── app.json
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Tech Stack
 
-## Learn more
+| Layer         | Technology                              |
+|---------------|-----------------------------------------|
+| Mobile        | React Native (Expo), TypeScript         |
+| State         | Zustand                                 |
+| API Client    | Axios + interceptors                    |
+| Backend       | Go 1.22, Gin framework                  |
+| Database      | PostgreSQL 16 (full-text search, UUID)  |
+| Cache         | Redis 7 (LRU eviction)                  |
+| Search        | Meilisearch v1.7                        |
+| Auth          | JWT (HS256) + bcrypt + RBAC             |
+| Container     | Docker + distroless                     |
 
-To learn more about developing your project with Expo, look at the following resources:
+## Quick Start
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Backend
 
-## Join the community
+```bash
+cd backend
+cp .env.example .env
+docker compose up -d
+# API available at http://localhost:8080
+```
 
-Join our community of developers creating universal apps.
+Local PostgreSQL only (no API container):
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+cd backend
+docker compose up -d postgres
+```
+
+Swap local Postgres → Supabase later: update just `DATABASE_URL` in `backend/.env` to your Supabase Postgres connection string.
+
+### Mobile
+
+```bash
+cd mobile
+npm install
+npm start     # Expo dev server
+# Scan QR with Expo Go app on your device
+```
+
+## API Endpoints
+
+```
+POST /api/v1/auth/register
+POST /api/v1/auth/login
+POST /api/v1/auth/logout        [auth]
+GET  /api/v1/auth/me            [auth]
+
+GET  /api/v1/legal/constitution  ?part=&page=&limit=
+GET  /api/v1/legal/search        ?q=&type=&page=&limit=
+GET  /api/v1/legal/featured
+GET  /api/v1/legal/:id
+
+POST /api/v1/complaints          [auth]
+GET  /api/v1/complaints          [auth]
+GET  /api/v1/complaints/:id      [auth]
+GET  /api/v1/complaints/track/:tid
+```
+
+## Roles
+
+| Role    | Permissions                                      |
+|---------|--------------------------------------------------|
+| citizen | Read legal docs, file complaints, bookmarks      |
+| lawyer  | All citizen + view all complaints (future)       |
+| admin   | Full access, status updates (future)             |
+
+## Environment
+
+See `backend/.env.example` for all required environment variables.
+
+---
+
+Made in India 🇮🇳 · NyayAPP v1.0.0
