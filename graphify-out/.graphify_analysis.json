@@ -1,0 +1,605 @@
+{
+  "communities": {
+    "0": [
+      "api_client_isapiaborterror",
+      "components_button_button",
+      "components_card_card",
+      "components_categorychips_categorychips",
+      "components_clausemodal_handlereferencepress",
+      "components_clausemodal_handletextlayout",
+      "components_clausemodal_rendertextwithrefs",
+      "components_legalcard_legalcard",
+      "components_loader_loader",
+      "components_searchbar_handleclear",
+      "components_searchbar_searchbar",
+      "components_tag_getvariantstyle",
+      "mobile_app_app",
+      "mobile_app_tsx",
+      "mobile_src_api_client_ts",
+      "mobile_src_features_ai_screens_askaiscreen_tsx",
+      "mobile_src_features_cases_screens_caseslistscreen_tsx",
+      "mobile_src_features_complaints_screens_filecomplaintscreen_tsx",
+      "mobile_src_features_drafting_screens_drafttypesscreen_tsx",
+      "mobile_src_features_explorer_components_categorychips_tsx",
+      "mobile_src_features_explorer_components_clausemodal_tsx",
+      "mobile_src_features_explorer_components_legalcard_tsx",
+      "mobile_src_features_explorer_components_searchbar_tsx",
+      "mobile_src_features_explorer_components_sectioncard_tsx",
+      "mobile_src_features_explorer_screens_actdetailsscreen_tsx",
+      "mobile_src_features_explorer_screens_articledetailscreen_tsx",
+      "mobile_src_features_explorer_screens_explorerscreen_tsx",
+      "mobile_src_features_home_screens_homescreen_tsx",
+      "mobile_src_features_onboarding_screens_authscreen_tsx",
+      "mobile_src_features_onboarding_screens_onboardingscreen_tsx",
+      "mobile_src_features_profile_screens_profilescreen_tsx",
+      "mobile_src_features_tools_screens_formshubscreen_tsx",
+      "mobile_src_features_tools_screens_uploaddocscreen_tsx",
+      "mobile_src_shared_components_button_tsx",
+      "mobile_src_shared_components_card_tsx",
+      "mobile_src_shared_components_input_tsx",
+      "mobile_src_shared_components_loader_tsx",
+      "mobile_src_shared_components_searchbar_tsx",
+      "mobile_src_shared_components_tag_tsx",
+      "mobile_src_theme_index_ts",
+      "react_native",
+      "screens_articledetailscreen_onbookmark",
+      "screens_articledetailscreen_onshare",
+      "screens_askaiscreen_clearconversation",
+      "screens_askaiscreen_handlesendmessage",
+      "screens_askaiscreen_handlesuggestionpress",
+      "screens_authscreen_submit",
+      "screens_authscreen_switchmode",
+      "screens_authscreen_validate",
+      "screens_explorerscreen_loadmore",
+      "screens_explorerscreen_onrefresh",
+      "screens_explorerscreen_renderitem",
+      "screens_filecomplaintscreen_submit",
+      "screens_filecomplaintscreen_validate",
+      "screens_onboardingscreen_toggleinterest",
+      "screens_profilescreen_fetchprofile",
+      "screens_profilescreen_onlogout",
+      "theme_index_usetheme"
+    ],
+    "1": [
+      "backend_internal_ai_delivery_http_handler_go",
+      "backend_internal_cases_delivery_http_handler_go",
+      "backend_internal_complaint_delivery_http_handler_go",
+      "backend_internal_drafting_delivery_http_handler_go",
+      "backend_internal_forms_delivery_http_handler_go",
+      "backend_internal_processor_delivery_http_handler_go",
+      "backend_internal_user_delivery_http_handler_go",
+      "backend_pkg_response_response_go",
+      "http_airesponse",
+      "http_citation",
+      "http_createrequest",
+      "http_draft",
+      "http_drafttemplate",
+      "http_handler",
+      "http_handler_addbookmark",
+      "http_handler_askai",
+      "http_handler_create",
+      "http_handler_createdraft",
+      "http_handler_deletedraft",
+      "http_handler_downloadform",
+      "http_handler_ensureuserrole",
+      "http_handler_getbyid",
+      "http_handler_getcourts",
+      "http_handler_getdraftbyid",
+      "http_handler_getprofile",
+      "http_handler_gettemplatebyid",
+      "http_handler_gettemplates",
+      "http_handler_getuserdrafts",
+      "http_handler_list",
+      "http_handler_listbookmarks",
+      "http_handler_listforms",
+      "http_handler_profilenamefromemail",
+      "http_handler_randomalpha",
+      "http_handler_registerroutes",
+      "http_handler_removebookmark",
+      "http_handler_search",
+      "http_handler_status",
+      "http_handler_summarize",
+      "http_handler_track",
+      "http_handler_updatedraft",
+      "http_handler_upload",
+      "http_summarizeresponse",
+      "response_response_created",
+      "response_response_error",
+      "response_response_forbidden",
+      "response_response_internal",
+      "response_response_paginated",
+      "response_response_success",
+      "response_response_unauthorized",
+      "response_response_validationerrors"
+    ],
+    "2": [
+      "adaptive_icon",
+      "complaints_onboarding",
+      "crime_onboarding",
+      "dark_mode_palette",
+      "dark_mode_screen",
+      "expo",
+      "favicon",
+      "feature_based_architecture",
+      "home_header_background",
+      "icon",
+      "inspiration",
+      "labor_laws_onboarding",
+      "light_mode_palette",
+      "light_mode_screen",
+      "mobile",
+      "mobile_index_ts",
+      "mobile_src_store_useauthstore_ts",
+      "mobile_src_store_usecomplaintstore_ts",
+      "mobile_src_store_uselegalstore_ts",
+      "mobile_src_store_usethemestore_ts",
+      "nativewind",
+      "onboarding_screen",
+      "personal_onboarding",
+      "react_navigation",
+      "reanimated",
+      "splash_icon",
+      "store_useauthstore_getauthstore",
+      "zustand"
+    ],
+    "3": [
+      "auth_module",
+      "backend",
+      "clean_architecture",
+      "complaint_module",
+      "constitution",
+      "cpc",
+      "crpc",
+      "docker",
+      "geo_data",
+      "gin",
+      "go",
+      "hma",
+      "ida",
+      "iea",
+      "ipc",
+      "jwt",
+      "legal_module",
+      "meilisearch",
+      "mva",
+      "nia",
+      "nyayapp",
+      "penal_code",
+      "postgresql",
+      "redis",
+      "user_module"
+    ],
+    "4": [
+      "mobile/src/features/explorer/screens/ActDetailsScreen.tsx",
+      "mobile/src/features/explorer/screens/ArticleDetailScreen.tsx",
+      "mobile/src/features/explorer/screens/ExplorerScreen.tsx",
+      "mobile/src/features/home/screens/HomeScreen.tsx",
+      "mobile/src/features/onboarding/screens/AuthScreen.tsx",
+      "mobile/src/features/onboarding/screens/OnboardingScreen.tsx",
+      "mobile/src/features/profile/screens/ProfileScreen.tsx",
+      "mobile/src/features/tools/screens/FormsHubScreen.tsx",
+      "mobile/src/features/tools/screens/UploadDocScreen.tsx",
+      "mobile/src/lib/supabase.ts",
+      "mobile/src/navigation/AppNavigator.tsx",
+      "mobile/src/navigation/navigationConfig.ts",
+      "mobile/src/shared/components/Button.tsx",
+      "mobile/src/shared/components/Card.tsx",
+      "mobile/src/shared/components/Input.tsx",
+      "mobile/src/shared/components/Loader.tsx",
+      "mobile/src/shared/components/SearchBar.tsx",
+      "mobile/src/shared/components/Tag.tsx",
+      "mobile/src/shared/components/index.ts",
+      "mobile/src/store/useAuthStore.ts",
+      "mobile/src/store/useLegalStore.ts",
+      "mobile/src/store/useThemeStore.ts",
+      "mobile/src/theme/index.ts",
+      "mobile/src/utils/parseLegalText.ts"
+    ],
+    "5": [
+      "backend_infrastructure_redis_redis_go",
+      "backend_internal_legal_delivery_http_routes_go",
+      "backend_internal_legal_repository_postgres_repository_go",
+      "backend_internal_legal_usecase_legal_usecase_go",
+      "http_handler_newlegalhandler",
+      "http_routes_registerroutes",
+      "redis_redis_connect",
+      "repository_legalrepository",
+      "repository_postgres_repository_newpostgreslegalrepository",
+      "repository_postgres_repository_normalizeactparams",
+      "repository_postgres_repository_normalizesectionparams",
+      "repository_postgreslegalrepository",
+      "repository_postgreslegalrepository_getactbyid",
+      "repository_postgreslegalrepository_getacts",
+      "repository_postgreslegalrepository_getsectionbyid",
+      "repository_postgreslegalrepository_getsectionsbyactid",
+      "repository_postgreslegalrepository_searchactsmeili",
+      "repository_postgreslegalrepository_searchactspostgres",
+      "usecase_legal_usecase_newlegalusecase",
+      "usecase_legalusecase",
+      "usecase_legalusecase_getactdetails",
+      "usecase_legalusecase_getacts",
+      "usecase_legalusecase_getsection"
+    ],
+    "6": [
+      "api_main_fileexists",
+      "api_main_findprojectroot",
+      "api_main_loadenv",
+      "api_main_main",
+      "audit_action",
+      "audit_audit_newlogger",
+      "audit_entry",
+      "audit_logger",
+      "audit_logger_record",
+      "audit_logger_recordsimple",
+      "backend_cmd_api_main_go",
+      "backend_pkg_audit_audit_go",
+      "backend_pkg_logger_logger_go",
+      "backend_pkg_middleware_logger_go",
+      "backend_pkg_middleware_ratelimit_go",
+      "logger_logger_new",
+      "middleware_logger_requestlogger",
+      "middleware_ratelimit_ratelimiter",
+      "middleware_ratelimit_strictratelimiter",
+      "middleware_ratelimiterconfig",
+      "mobile_src_features_complaints_screens_complaintslistscreen_tsx",
+      "screens_complaintslistscreen_load",
+      "screens_complaintslistscreen_onrefresh"
+    ],
+    "7": [
+      "backend_scripts_ingest_legal_data_js",
+      "scripts_ingest_legal_data_buildactdescription",
+      "scripts_ingest_legal_data_ensureindex",
+      "scripts_ingest_legal_data_ensuremeiliindexes",
+      "scripts_ingest_legal_data_indexact",
+      "scripts_ingest_legal_data_ingestact",
+      "scripts_ingest_legal_data_normalizetext",
+      "scripts_ingest_legal_data_parseconstitution",
+      "scripts_ingest_legal_data_parsecsvline",
+      "scripts_ingest_legal_data_parsehma",
+      "scripts_ingest_legal_data_parseipc",
+      "scripts_ingest_legal_data_parsestandard",
+      "scripts_ingest_legal_data_processact",
+      "scripts_ingest_legal_data_run",
+      "scripts_ingest_legal_data_safestring",
+      "scripts_ingest_legal_data_shortdescription",
+      "scripts_ingest_legal_data_slugify",
+      "scripts_ingest_legal_data_tosection"
+    ],
+    "8": [
+      "backend_infrastructure_postgres_postgres_go",
+      "backend_internal_domain_go",
+      "internal_bookmark",
+      "internal_complaint",
+      "internal_complaintstatus",
+      "internal_documenttype",
+      "internal_legaldocument",
+      "internal_role",
+      "internal_user",
+      "postgres_connectioninfo",
+      "postgres_postgres_connect",
+      "postgres_postgres_describedsn",
+      "postgres_postgres_ispoolerhost",
+      "postgres_postgres_issupabasehost",
+      "postgres_postgres_maskdsnfallback",
+      "postgres_postgres_normalizedsn"
+    ],
+    "9": [
+      "backend_internal_legal_delivery_http_handler_go",
+      "http_handler_buildpaginatedpayload",
+      "http_handler_clampint",
+      "http_handler_getintquery",
+      "http_legalhandler",
+      "http_legalhandler_cacheget",
+      "http_legalhandler_cacheset",
+      "http_legalhandler_getactdetails",
+      "http_legalhandler_getacts",
+      "http_legalhandler_getsection",
+      "response_response_badrequest",
+      "response_response_notfound",
+      "response_response_raw"
+    ],
+    "10": [
+      "auth_middleware",
+      "config_pkg",
+      "legal_handler",
+      "legal_repo",
+      "legal_usecase",
+      "logger_pkg",
+      "main",
+      "meili_infra",
+      "postgres_infra",
+      "redis_infra",
+      "response_pkg",
+      "user_handler"
+    ],
+    "11": [
+      "backend_pkg_config_config_go",
+      "backend_scripts_test_db_go",
+      "config_config",
+      "config_config_getenv",
+      "config_config_load",
+      "config_config_parseduration",
+      "config_config_sanitizeallowedorigins",
+      "config_config_validate",
+      "scripts_test_db_fileexists",
+      "scripts_test_db_findprojectroot",
+      "scripts_test_db_main"
+    ],
+    "12": [
+      "constitution_coi_indianconstitution",
+      "constitution_coi_indianconstitution_articleslist",
+      "constitution_coi_indianconstitution_articlesummary",
+      "constitution_coi_indianconstitution_cleantext",
+      "constitution_coi_indianconstitution_countarticles",
+      "constitution_coi_indianconstitution_getarticle",
+      "constitution_coi_indianconstitution_preamble",
+      "constitution_coi_indianconstitution_searchbytitle",
+      "constitution_coi_indianconstitution_searchkeyword",
+      "data_constitution_coi_js"
+    ],
+    "13": [
+      "backend_pkg_middleware_auth_go",
+      "middleware_auth_fetchjwks",
+      "middleware_auth_jwtauth",
+      "middleware_auth_requiredbrole",
+      "middleware_auth_requirerole",
+      "middleware_jwk",
+      "middleware_jwks",
+      "middleware_supabaseclaims",
+      "middleware_supabaseclaims_approle"
+    ],
+    "14": [
+      "constitution_index_counttotalarticles",
+      "constitution_index_getarticle",
+      "constitution_index_getarticlesummary",
+      "constitution_index_getpreamble",
+      "constitution_index_listarticles",
+      "constitution_index_searchbytitle",
+      "constitution_index_searchkeyword",
+      "data_constitution_index_js"
+    ],
+    "15": [
+      "mobile_src_navigation_appnavigator_tsx",
+      "navigation_appnavigator_appnavigator",
+      "navigation_appnavigator_exploretabscreen",
+      "navigation_appnavigator_hometabscreen",
+      "navigation_appnavigator_toimpactstyle",
+      "navigation_appnavigator_triggerhaptic"
+    ],
+    "16": [
+      "mobile/src/api/client.ts",
+      "mobile/src/api/endpoints.ts",
+      "mobile/src/features/ai/screens/AskAIScreen.tsx",
+      "mobile/src/features/complaints/screens/ComplaintsListScreen.tsx",
+      "mobile/src/features/complaints/screens/FileComplaintScreen.tsx",
+      "mobile/src/features/drafting/screens/DraftTypesScreen.tsx"
+    ],
+    "17": [
+      "backend_internal_legal_models_go",
+      "legal_act",
+      "legal_actlistparams",
+      "legal_section",
+      "legal_sectionlistparams"
+    ],
+    "18": [
+      "backend_infrastructure_meilisearch_meilisearch_go",
+      "meilisearch_meilisearch_connect",
+      "meilisearch_meilisearch_ensureindex"
+    ],
+    "19": [
+      "mobile_src_utils_parselegaltext_ts",
+      "utils_parselegaltext_extractreferences",
+      "utils_parselegaltext_parselegaltext"
+    ],
+    "20": [
+      "backend_scripts_apply_schema_js",
+      "scripts_apply_schema_applyschema"
+    ],
+    "21": [
+      "backend_scripts_list_db_state_js",
+      "scripts_list_db_state_listtables"
+    ],
+    "22": [
+      "backend_scripts_test_db_js",
+      "scripts_test_db_test"
+    ],
+    "23": [
+      "backend_scripts_test_rest_js",
+      "scripts_test_rest_testrest"
+    ],
+    "24": [
+      "Data/Constitution/COI.js",
+      "Data/Constitution/index.js"
+    ],
+    "25": [
+      "mobile/App.tsx",
+      "mobile/index.ts"
+    ],
+    "26": [
+      "mobile/src/features/explorer/components/LegalCard.tsx",
+      "mobile/src/features/explorer/types.ts"
+    ],
+    "27": [
+      "backend_internal_auth_delivery_http_handler_go"
+    ],
+    "28": [
+      "mobile_babel_config_js"
+    ],
+    "29": [
+      "mobile_env_d_ts"
+    ],
+    "30": [
+      "mobile_src_api_endpoints_ts"
+    ],
+    "31": [
+      "mobile_src_features_explorer_types_ts"
+    ],
+    "32": [
+      "mobile_src_lib_supabase_ts"
+    ],
+    "33": [
+      "mobile_src_navigation_navigationconfig_ts"
+    ],
+    "34": [
+      "mobile_src_shared_components_index_ts"
+    ],
+    "35": [
+      "domain"
+    ],
+    "36": [
+      "legal_models"
+    ],
+    "37": [
+      "backend/scripts/apply_schema.js"
+    ],
+    "38": [
+      "backend/scripts/ingest_legal_data.js"
+    ],
+    "39": [
+      "backend/scripts/list_db_state.js"
+    ],
+    "40": [
+      "backend/scripts/test_db.go"
+    ],
+    "41": [
+      "backend/scripts/test_db.js"
+    ],
+    "42": [
+      "backend/scripts/test_rest.js"
+    ],
+    "43": [
+      "mobile/babel.config.js"
+    ],
+    "44": [
+      "mobile/env.d.ts"
+    ],
+    "45": [
+      "mobile/src/features/cases/screens/CasesListScreen.tsx"
+    ],
+    "46": [
+      "mobile/src/features/explorer/components/CategoryChips.tsx"
+    ],
+    "47": [
+      "mobile/src/features/explorer/components/ClauseModal.tsx"
+    ],
+    "48": [
+      "mobile/src/features/explorer/components/SearchBar.tsx"
+    ],
+    "49": [
+      "mobile/src/features/explorer/components/SectionCard.tsx"
+    ],
+    "50": [
+      "mobile/src/store/useComplaintStore.ts"
+    ]
+  },
+  "cohesion": {},
+  "god_nodes": [
+    {
+      "id": "http_handler",
+      "label": "Handler",
+      "degree": 31
+    },
+    {
+      "id": "response_response_success",
+      "label": "Success()",
+      "degree": 21
+    },
+    {
+      "id": "response_response_internal",
+      "label": "Internal()",
+      "degree": 14
+    },
+    {
+      "id": "api_main_main",
+      "label": "main()",
+      "degree": 11
+    },
+    {
+      "id": "response_response_error",
+      "label": "Error()",
+      "degree": 11
+    },
+    {
+      "id": "http_handler_registerroutes",
+      "label": "RegisterRoutes()",
+      "degree": 10
+    },
+    {
+      "id": "constitution_coi_indianconstitution",
+      "label": "IndianConstitution",
+      "degree": 9
+    },
+    {
+      "id": "postgres_postgres_describedsn",
+      "label": "DescribeDSN()",
+      "degree": 7
+    },
+    {
+      "id": "repository_postgreslegalrepository",
+      "label": "postgresLegalRepository",
+      "degree": 7
+    },
+    {
+      "id": "logger_logger_new",
+      "label": "New()",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "RegisterRoutes()",
+      "target": "NewLogger()",
+      "source_files": [
+        "backend\\internal\\user\\delivery\\http\\handler.go",
+        "backend\\pkg\\audit\\audit.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities; peripheral node `NewLogger()` unexpectedly reaches hub `RegisterRoutes()`"
+    },
+    {
+      "source": "main()",
+      "target": "Error()",
+      "source_files": [
+        "backend\\cmd\\api\\main.go",
+        "backend\\pkg\\response\\response.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "main()",
+      "target": "DescribeDSN()",
+      "source_files": [
+        "backend\\cmd\\api\\main.go",
+        "backend\\infrastructure\\postgres\\postgres.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "main()",
+      "target": "NormalizeDSN()",
+      "source_files": [
+        "backend\\cmd\\api\\main.go",
+        "backend\\infrastructure\\postgres\\postgres.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "main()",
+      "target": "Connect()",
+      "source_files": [
+        "backend\\cmd\\api\\main.go",
+        "backend\\infrastructure\\redis\\redis.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    }
+  ]
+}
